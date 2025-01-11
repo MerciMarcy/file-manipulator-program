@@ -9,7 +9,7 @@ class FileManipulator:
         self.n = 0
         self.oldString = ""
         self.newString = ""
-        if self.command == "reverse" or "copy":
+        if self.command == "reverse" or self.command == "copy":
             self.outputPath = argList[3]
         if self.command == "duplicate-contents":
             self.n = int(argList[3])
